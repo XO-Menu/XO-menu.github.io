@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XO PlayStation – المنيو</title>
+<style>
+:root{
+  --bg:#0a0612; --surface:#150d24; --text:#f4eefc; --muted:#a99cc4;
+  --red:#ff2d4a; --blue:#2d7bff; --line:#3a2760;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0a0612;--surface:#150d24;--text:#f4eefc;--muted:#a99cc4}
+}
+:root[data-theme="dark"]{--bg:#0a0612;--surface:#150d24;--text:#f4eefc;--muted:#a99cc4}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;line-height:1.5}
+header{text-align:center;padding:36px 16px 20px}
+.logo{font-family:Impact,"Arial Black",sans-serif;font-size:64px;letter-spacing:2px;margin:0;line-height:1}
+.logo .x{color:var(--red);text-shadow:0 0 12px var(--red),0 0 28px var(--red)}
+.logo .o{color:var(--blue);text-shadow:0 0 12px var(--blue),0 0 28px var(--blue)}
+.sub{margin:8px 0 0;font-size:20px;font-weight:700;letter-spacing:1px}
+.tag{color:var(--muted);margin:4px 0 0;font-size:14px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:10px 12px;border-bottom:1px solid var(--line)}
+nav a{flex:none;color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:14px}
+nav a:active{background:var(--red);border-color:var(--red)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+main{max-width:640px;margin:0 auto;padding:12px 14px 40px}
+section{margin:22px 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+section:nth-of-type(odd){border-color:var(--red);box-shadow:0 0 14px rgba(255,45,74,.25)}
+section:nth-of-type(even){border-color:var(--blue);box-shadow:0 0 14px rgba(45,123,255,.25)}
+h2{margin:0 0 10px;font-size:20px}
+h2 small{color:var(--muted);font-weight:400;font-size:13px;margin-inline-start:8px}
+ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
+li{padding:7px 0;border-bottom:1px dashed var(--line);font-size:15px;direction:ltr;text-align:left}
+li.one{grid-column:1/-1}
+.qr{text-align:center}
+#qrbox{display:inline-block;background:#fff;padding:12px;border-radius:10px;margin:8px 0}
+.qr p{color:var(--muted);font-size:13px;margin:4px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding-bottom:30px}
+@media(max-width:380px){ul{grid-template-columns:1fr}.logo{font-size:52px}}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="logo"><span class="x">X</span><span class="o">O</span></h1>
+  <p class="sub">PlayStation</p>
+  <p class="tag">Drink · Eat · Relax</p>
+</header>
+<nav>
+  <a href="#cold">باردة</a><a href="#hot">ساخنة</a><a href="#food">أكل</a><a href="#chips">شيبس</a><a href="#choc">شوكولاتة</a><a href="#bisc">بسكويت</a><a href="#hookah">نرجيلة</a>
+</nav>
+<main>
+<section id="cold"><h2>المشروبات الباردة<small>Soğuk İçecekler</small></h2><ul>
+<li>Gaark Gazoz Mandalina</li><li>Gaark Gazoz Frambuaz</li><li>Fruttare Gazli Ginger Honey Lemon</li><li>Çamlıca Limon</li><li>Çamlıca Portakal</li><li>Avşar Soda</li><li>Akmina Soda</li><li>Kızılay Soda</li><li>Sağda Gazoz</li><li>Brox Enerji İçecek</li><li>Juss Pulpy</li><li>Maltana Malt İçecek</li><li>Ice Coffe</li><li>Juyu Meyveli İçecek</li><li>Seles Orijinal</li><li>Fuce Tea</li><li>Red Bull</li><li>Baisun</li><li>Just Power</li><li>Go Up Gazoz</li><li>Su</li></ul></section>
+<section id="hot"><h2>المشروبات الساخنة<small>Sıcak İçecekler</small></h2><ul>
+<li>Çay</li><li>Arvelet</li><li>Sıcak Çikolata</li><li>İkisi Bir Arada</li><li>Üçü Bir Arada</li><li>Espresso</li><li>Zencefil ve Limon</li><li>Zhourat Shamia</li><li>Chamomile Flowers</li></ul></section>
+<section id="food"><h2>أكل<small>Yiyecekler</small></h2><ul><li class="one">İndomie</li></ul></section>
+<section id="chips"><h2>شيبس<small>Cipsler</small></h2><ul>
+<li>Peritos</li><li>Funchos</li><li>Lkzz</li><li>Classic</li><li>Gong</li></ul></section>
+<section id="choc"><h2>شوكولاتة<small>Çikolatalar</small></h2><ul>
+<li>Karam</li><li>Çanga</li><li>Browni</li><li>Coco Star</li><li>Ülker Gofret</li><li>Kinder</li><li>Al beni</li><li>Eti Fıstıklı</li><li>Metro</li><li>Eti Sade</li><li>Maksimus</li><li>Petito Mini</li><li>Eti Mini Tablet</li></ul></section>
+<section id="bisc"><h2>بسكويت<small>Bisküviler</small></h2><ul>
+<li>Sklıköy</li><li>Biskrem</li><li>Çizi</li><li>Al beni</li><li>Çizi Viç</li><li>Tutku</li><li>İkram</li><li>Hoşbeş</li><li>Pok Kek</li><li>Sufle</li></ul></section>
+<section id="hookah"><h2>نرجيلة<small>Nargile</small></h2><ul>
+<li>Anason</li><li>Nakhla</li><li class="one">Love (Meyveli)</li></ul></section>
+<section class="qr"><h2>شارك المنيو</h2><div id="qrbox"></div><p>امسح الرمز لفتح المنيو</p></section>
+</main>
+<footer>XO PlayStation · Good Vibes Only</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+try{
+  var url=location.href.split('#')[0];
+  new QRCode(document.getElementById('qrbox'),{text:url,width:200,height:200,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});
+}catch(e){document.getElementById('qrbox').textContent='';}
+</script>
+</body>
+</html>
